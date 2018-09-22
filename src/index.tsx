@@ -1,15 +1,13 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import { App } from "./app";
-import { printMe } from './printer';
+import { App } from "./components/app";
 
-function createRootDomElement() {
-  const root = document.createElement("div");
-  root.id = "root";
-  document.body.appendChild(root);
-}
+const root = document.createElement("div");
+root.id = "root";
+document.body.appendChild(root);
 
-printMe('hey');
+document.body.style.fontFamily = 'Roboto, sans-serif';
+document.body.style.backgroundColor = '#eee';
+document.body.style.margin = '0';
 
-createRootDomElement();
 ReactDOM.render(<App />, document.getElementById("root"));

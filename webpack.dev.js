@@ -18,7 +18,10 @@ webpackCommon.devServer = {
 
 webpackCommon.plugins = [
     ...webpackCommon.plugins, 
-    new HtmlWebpackPlugin({title: 'Webpack Playground'}),
+    new HtmlWebpackPlugin({
+        title: 'Webpack Playground',
+        template: './src/index.html'
+    }),
     new BundleAnalyzerPlugin({
         analyzerMode: 'static',
         openAnalyzer: false
