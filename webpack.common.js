@@ -14,26 +14,9 @@ module.exports = {
                 loader: 'ts-loader',
                 exclude: /node_modules/
             },
-            {
-                test: /\.css$/,
-                loader: 'style-loader'
-            },
-            {
-                test: /\.css$/,
-                // replacement for css-loader, generates type definition files for css modules on the fly
-                loader: 'typings-for-css-modules-loader',
-                query: {
-                    modules: true,
-                    namedExport: true
-                }
-            },
         ]
     },
     plugins: [
-        new CleanWebpackPlugin(['dist']),
-        new webpack.WatchIgnorePlugin([
-            // prevent rebuilds due to generated css type definitions
-            /\.css\.d\.ts$/
-        ])
+        new CleanWebpackPlugin(['dist'])
     ]
 }
