@@ -15,6 +15,7 @@
     "devDependencies": {
         "@types/enzyme": "^3.1.14",
         "@types/enzyme-adapter-react-16": "^1.0.3",
+        "@types/jest": "^23.3.13",
         "@types/react": "^16.4.14",
         "@types/react-dom": "^16.0.7",
         "@types/webpack": "^4.4.12",
@@ -23,15 +24,14 @@
         "enzyme": "^3.6.0",
         "enzyme-adapter-react-16": "^1.5.0",
         "html-webpack-plugin": "^3.2.0",
-        "jest": "^23.6.0",
+        "jest": "^25.1.0",
+        "ts-jest": "^25.2.1",
         "ts-loader": "^5.1.1",
         "typescript": "^3.0.3",
-        "webpack": "^4.19.1",
-        "webpack-bundle-analyzer": "^3.0.2",
+        "webpack": "^4.42.0",
+        "webpack-bundle-analyzer": "^3.6.1",
         "webpack-cli": "^3.1.0",
-        "webpack-dev-server": "^3.1.8",
-        "ts-jest": "^23.10.5",
-        "@types/jest": "^23.3.13"
+        "webpack-dev-server": "^3.10.3"
     },
     "private": true,
     "dependencies": {
@@ -42,7 +42,7 @@
     },
     "jest": {
         "transform": {
-            ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+            ".(ts|tsx)": "ts-jest"
         },
         "testRegex": "(/tests/.*|\\.(spec))\\.(ts|tsx|js)$",
         "moduleFileExtensions": [
