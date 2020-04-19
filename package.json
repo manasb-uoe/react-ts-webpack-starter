@@ -36,9 +36,11 @@
     "private": true,
     "dependencies": {
         "@material-ui/core": "^3.1.0",
+        "css-loader": "^3.5.2",
         "react": "^16.5.2",
         "react-bootstrap": "^1.0.0-beta.1",
-        "react-dom": "^16.5.2"
+        "react-dom": "^16.5.2",
+        "style-loader": "^1.1.4"
     },
     "jest": {
         "transform": {
